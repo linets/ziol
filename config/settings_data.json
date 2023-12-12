@@ -101,10 +101,17 @@
     "brand_headline": "",
     "brand_description": "<p><\/p>",
     "brand_image_width": 100,
+<<<<<<< Updated upstream
     "social_facebook_link": "https:\/\/www.facebook.com\/ziol.chile\/",
     "social_instagram_link": "https:\/\/www.instagram.com\/ziolstore\/",
     "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCPZzSQgSCB9UyxRjF7ngPQg",
     "social_tiktok_link": "",
+=======
+    "social_facebook_link": "https:\/\/www.instagram.com\/ziolstore\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/ziolstore\/",
+    "social_youtube_link": "https:\/\/www.instagram.com\/ziolstore\/",
+    "social_tiktok_link": "https:\/\/www.instagram.com\/ziolstore\/",
+>>>>>>> Stashed changes
     "social_twitter_link": "",
     "social_snapchat_link": "",
     "social_pinterest_link": "",

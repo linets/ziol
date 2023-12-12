@@ -5,6 +5,7 @@
     "4c49f456-02d5-479f-be00-4eaad5d13b6f": {
       "type": "newsletter",
       "blocks": {
+<<<<<<< Updated upstream
         "sections--21480317452481__4c49f456-02d5-479f-be00-4eaad5d13b6f-paragraph-1": {
           "type": "paragraph",
           "settings": {
@@ -55,9 +56,28 @@
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
         "show_social": false,
+=======
+        "95f1da42-0d5e-4188-bced-44e0a72b408a": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "95f1da42-0d5e-4188-bced-44e0a72b408a"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "SUBSCRÍBETE A NUESTRA NEWSLETTER <br> Y OBTÉN UN <strong>10% DE DCTO. <\/strong>EN TU PRÓXIMA COMPRA.",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+>>>>>>> Stashed changes
         "enable_country_selector": false,
         "enable_language_selector": false,
-        "payment_enable": true,
+        "payment_enable": false,
         "show_policy": false,
         "margin_top": 48,
         "padding_top": 36,
