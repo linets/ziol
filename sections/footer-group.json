@@ -2,26 +2,59 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "footer": {
-      "type": "footer",
+    "4c49f456-02d5-479f-be00-4eaad5d13b6f": {
+      "type": "newsletter",
       "blocks": {
-        "0e094103-7e11-40bb-9197-dca786fdf460": {
-          "type": "link_list",
+        "sections--21480317452481__4c49f456-02d5-479f-be00-4eaad5d13b6f-paragraph-1": {
+          "type": "paragraph",
           "settings": {
-            "heading": "",
-            "menu": "footer"
+            "text": "<p>¡SUSCRÍBETE A NUESTROS NEWSLETTERS!<br\/>OBTÉN UN<strong>10% OFF<\/strong>EN TU COMPRA ONLINE.<\/p>"
+          }
+        },
+        "sections--21480317452481__4c49f456-02d5-479f-be00-4eaad5d13b6f-email_form-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        },
+        "sections--21480317452481__4c49f456-02d5-479f-be00-4eaad5d13b6f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Suscríbete",
+            "heading_size": "h1"
           }
         }
       },
       "block_order": [
-        "0e094103-7e11-40bb-9197-dca786fdf460"
+        "sections--21480317452481__4c49f456-02d5-479f-be00-4eaad5d13b6f-paragraph-1",
+        "sections--21480317452481__4c49f456-02d5-479f-be00-4eaad5d13b6f-email_form-1",
+        "sections--21480317452481__4c49f456-02d5-479f-be00-4eaad5d13b6f-heading-1"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "eb9f282b-ece5-404c-9b99-ab78ba26248b": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        }
+      },
+      "block_order": [
+        "eb9f282b-ece5-404c-9b99-ab78ba26248b"
       ],
       "settings": {
         "color_scheme": "scheme-1",
-        "newsletter_enable": true,
-        "newsletter_heading": "¡SUSCRÍBETE A NUESTROS NEWSLETTERS!<br>OBTÉN UN <strong>10% OFF<\/strong> EN TU COMPRA ONLINE.",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
-        "show_social": true,
+        "show_social": false,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": true,
@@ -33,6 +66,7 @@
     }
   },
   "order": [
+    "4c49f456-02d5-479f-be00-4eaad5d13b6f",
     "footer"
   ]
 }

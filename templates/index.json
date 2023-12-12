@@ -176,9 +176,9 @@
         "template--16161306640578__406a65c7-d10a-4160-a30c-634059fa1435-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_7.webp",
-            "title": "",
-            "text": "",
+            "image": "shopify:\/\/shop_images\/tracktransport_pista_4525.png",
+            "title": "<strong>Envíos gratis<\/strong>",
+            "text": "<p>Por compras sobre los $49.00 en Regiones de Atacama a los Lagos <\/p>",
             "link_label": "",
             "link": ""
           }
@@ -186,8 +186,9 @@
         "5d62f929-a455-4369-b59a-d72d1f33b2a1": {
           "type": "column",
           "settings": {
-            "title": "<strong>DESPACHO A TODO CHILE <\/strong>",
-            "text": "<p>Entrega en hasta 10 días hábiles<\/p>",
+            "image": "shopify:\/\/shop_images\/descarga.png",
+            "title": "<strong>Cambio y devoluciones Sin costo <\/strong>",
+            "text": "<p><\/p><p><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -195,17 +196,9 @@
         "7f41631c-b9a8-4930-b18f-ab768cd27ca3": {
           "type": "column",
           "settings": {
-            "title": "<strong>DESPACHO A TODO CHILE <\/strong>",
-            "text": "<p>Entrega en hasta 10 días hábiles<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "03714b60-d986-4306-875b-c8107dd1439e": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>DESPACHO A TODO CHILE <\/strong>",
-            "text": "<p>Entrega en hasta 10 días hábiles<\/p>",
+            "image": "shopify:\/\/shop_images\/423519.png",
+            "title": "<strong>Compra hasta 6 coutas sin interes<\/strong>",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -214,15 +207,14 @@
       "block_order": [
         "template--16161306640578__406a65c7-d10a-4160-a30c-634059fa1435-column-1",
         "5d62f929-a455-4369-b59a-d72d1f33b2a1",
-        "7f41631c-b9a8-4930-b18f-ab768cd27ca3",
-        "03714b60-d986-4306-875b-c8107dd1439e"
+        "7f41631c-b9a8-4930-b18f-ab768cd27ca3"
       ],
       "settings": {
         "title": "",
-        "heading_size": "h2",
-        "image_width": "full",
-        "image_ratio": "square",
-        "columns_desktop": 4,
+        "heading_size": "h1",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
