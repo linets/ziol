@@ -19,7 +19,7 @@
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
-        "newsletter_heading": "¡SUSCRÍBETE A NUESTROS NEWSLETTERS!<br>OBTÉN UN<strong>10% OFF<\/strong>EN TU COMPRA ONLINE.",
+        "newsletter_heading": "¡SUSCRÍBETE A NUESTROS NEWSLETTERS!<br>OBTÉN UN <strong>10% OFF<\/strong> EN TU COMPRA ONLINE.",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,
