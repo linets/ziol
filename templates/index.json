@@ -177,8 +177,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/tracktransport_pista_4525.png",
-            "title": "<strong>Envíos gratis<\/strong>",
-            "text": "<p>Por compras sobre los $49.00 en Regiones de Atacama a los Lagos <\/p>",
+            "title": "<strong>Envíos gratis Por compras sobre los $49.00 en Regiones de Atacama a los Lagos <\/strong>",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -211,7 +211,7 @@
       ],
       "settings": {
         "title": "",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "image_width": "half",
         "image_ratio": "adapt",
         "columns_desktop": 3,
@@ -220,7 +220,7 @@
         "button_label": "",
         "button_link": "",
         "color_scheme": "",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 16,
         "padding_bottom": 20
