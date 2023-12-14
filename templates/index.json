@@ -142,6 +142,97 @@
         "padding_bottom": 36
       }
     },
+    "b18a84ed-5707-48d2-b87d-d05620258745": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21506872606913__b18a84ed-5707-48d2-b87d-d05620258745-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/png-transparent-diaper-bags-handbag-macy-s-leather-bag.png",
+            "title": "Bandolera Selene",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21506872606913__b18a84ed-5707-48d2-b87d-d05620258745-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/png-transparent-diaper-bags-handbag-macy-s-leather-bag.png",
+            "title": "Bandolera Selene",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21506872606913__b18a84ed-5707-48d2-b87d-d05620258745-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/png-transparent-diaper-bags-handbag-macy-s-leather-bag.png",
+            "title": "Bandolera Selene",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "e5f2d0c4-f397-441d-8e8e-e8be220ca745": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/png-transparent-diaper-bags-handbag-macy-s-leather-bag.png",
+            "title": "Bandolera Selene",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "5da61721-6766-41fb-bb07-2a65464d7801": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/png-transparent-diaper-bags-handbag-macy-s-leather-bag.png",
+            "title": "Bandolera Selene",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "9530b128-0e96-45fc-8d42-c21b286760c1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/png-transparent-diaper-bags-handbag-macy-s-leather-bag.png",
+            "title": "Bandolera Selene",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21506872606913__b18a84ed-5707-48d2-b87d-d05620258745-column-1",
+        "template--21506872606913__b18a84ed-5707-48d2-b87d-d05620258745-column-2",
+        "template--21506872606913__b18a84ed-5707-48d2-b87d-d05620258745-column-3",
+        "e5f2d0c4-f397-441d-8e8e-e8be220ca745",
+        "5da61721-6766-41fb-bb07-2a65464d7801",
+        "9530b128-0e96-45fc-8d42-c21b286760c1"
+      ],
+      "settings": {
+        "force_full_width": true,
+        "title": "THE ICONS | METALLIC OBSESSION",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 6,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_desktop": false,
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 52
+      }
+    },
     "c9b0fe17-cb03-4806-8bab-0744078ee0da": {
       "type": "collection-list",
       "blocks": {
@@ -325,108 +416,17 @@
         "padding_top": 16,
         "padding_bottom": 20
       }
-    },
-    "b18a84ed-5707-48d2-b87d-d05620258745": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--21506872606913__b18a84ed-5707-48d2-b87d-d05620258745-column-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/png-transparent-diaper-bags-handbag-macy-s-leather-bag.png",
-            "title": "Bandolera Selene",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--21506872606913__b18a84ed-5707-48d2-b87d-d05620258745-column-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/png-transparent-diaper-bags-handbag-macy-s-leather-bag.png",
-            "title": "Bandolera Selene",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--21506872606913__b18a84ed-5707-48d2-b87d-d05620258745-column-3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/png-transparent-diaper-bags-handbag-macy-s-leather-bag.png",
-            "title": "Bandolera Selene",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "e5f2d0c4-f397-441d-8e8e-e8be220ca745": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/png-transparent-diaper-bags-handbag-macy-s-leather-bag.png",
-            "title": "Bandolera Selene",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "5da61721-6766-41fb-bb07-2a65464d7801": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/png-transparent-diaper-bags-handbag-macy-s-leather-bag.png",
-            "title": "Bandolera Selene",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "9530b128-0e96-45fc-8d42-c21b286760c1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/png-transparent-diaper-bags-handbag-macy-s-leather-bag.png",
-            "title": "Bandolera Selene",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21506872606913__b18a84ed-5707-48d2-b87d-d05620258745-column-1",
-        "template--21506872606913__b18a84ed-5707-48d2-b87d-d05620258745-column-2",
-        "template--21506872606913__b18a84ed-5707-48d2-b87d-d05620258745-column-3",
-        "e5f2d0c4-f397-441d-8e8e-e8be220ca745",
-        "5da61721-6766-41fb-bb07-2a65464d7801",
-        "9530b128-0e96-45fc-8d42-c21b286760c1"
-      ],
-      "settings": {
-        "force_full_width": true,
-        "title": "THE ICONS | METALLIC OBSESSION",
-        "heading_size": "h2",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 6,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_desktop": false,
-        "swipe_on_mobile": false,
-        "padding_top": 20,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "608f3ae5-b1cf-4082-919f-3ead2712d478",
     "50de47a7-f996-4a6d-b58d-95a761bb737e",
     "fd8003f0-fa91-4c7d-8f99-2bb233dd3615",
+    "b18a84ed-5707-48d2-b87d-d05620258745",
     "c9b0fe17-cb03-4806-8bab-0744078ee0da",
     "241f4691-2553-4f6e-bc31-ad64aa132e6b",
     "featured_collection",
     "dc802415-49b3-4130-a1bb-b4143927a0d4",
-    "406a65c7-d10a-4160-a30c-634059fa1435",
-    "b18a84ed-5707-48d2-b87d-d05620258745"
+    "406a65c7-d10a-4160-a30c-634059fa1435"
   ]
 }
