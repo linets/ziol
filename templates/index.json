@@ -267,6 +267,64 @@
         "padding_top": 16,
         "padding_bottom": 20
       }
+    },
+    "fd8003f0-fa91-4c7d-8f99-2bb233dd3615": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21506872606913__fd8003f0-fa91-4c7d-8f99-2bb233dd3615-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CAJA-2.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21506872606913__fd8003f0-fa91-4c7d-8f99-2bb233dd3615-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CAJA-1.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21506872606913__fd8003f0-fa91-4c7d-8f99-2bb233dd3615-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CAJA-2_3bc3045a-33fa-4ce5-974c-a4a88f921940.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21506872606913__fd8003f0-fa91-4c7d-8f99-2bb233dd3615-column-1",
+        "template--21506872606913__fd8003f0-fa91-4c7d-8f99-2bb233dd3615-column-2",
+        "template--21506872606913__fd8003f0-fa91-4c7d-8f99-2bb233dd3615-column-3"
+      ],
+      "settings": {
+        "force_full_width": true,
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_desktop": false,
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -276,6 +334,7 @@
     "241f4691-2553-4f6e-bc31-ad64aa132e6b",
     "featured_collection",
     "dc802415-49b3-4130-a1bb-b4143927a0d4",
-    "406a65c7-d10a-4160-a30c-634059fa1435"
+    "406a65c7-d10a-4160-a30c-634059fa1435",
+    "fd8003f0-fa91-4c7d-8f99-2bb233dd3615"
   ]
 }
