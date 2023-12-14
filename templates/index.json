@@ -235,6 +235,9 @@
     },
     "241f4691-2553-4f6e-bc31-ad64aa132e6b": {
       "type": "image-banner",
+      "custom_css": [
+        ".banner--content-align-mobile-center {margin-top:50px;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/metalicos_desktop.webp",
         "image_overlay_opacity": 0,
