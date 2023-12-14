@@ -399,7 +399,7 @@
         "9530b128-0e96-45fc-8d42-c21b286760c1"
       ],
       "settings": {
-        "force_full_width": false,
+        "force_full_width": true,
         "title": "THE ICONS | METALLIC OBSESSION",
         "heading_size": "h2",
         "image_width": "full",
