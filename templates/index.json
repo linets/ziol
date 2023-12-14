@@ -309,6 +309,9 @@
         "5d62f929-a455-4369-b59a-d72d1f33b2a1",
         "7f41631c-b9a8-4930-b18f-ab768cd27ca3"
       ],
+      "custom_css": [
+        ".multicolumn {background: #f5f5f5}"
+      ],
       "settings": {
         "force_full_width": false,
         "title": "",
