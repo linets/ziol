@@ -233,6 +233,37 @@
         "padding_bottom": 52
       }
     },
+    "241f4691-2553-4f6e-bc31-ad64aa132e6b": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/metalicos_desktop.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "dc802415-49b3-4130-a1bb-b4143927a0d4": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "custm_video_url": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=rqqa37AjIoI&list=TLGG9WBNJA4x4TcwNzEyMjAyMw",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "c9b0fe17-cb03-4806-8bab-0744078ee0da": {
       "type": "collection-list",
       "blocks": {
@@ -291,22 +322,6 @@
         "padding_bottom": 36
       }
     },
-    "241f4691-2553-4f6e-bc31-ad64aa132e6b": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/metalicos_desktop.webp",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -333,21 +348,6 @@
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 44,
-        "padding_bottom": 36
-      }
-    },
-    "dc802415-49b3-4130-a1bb-b4143927a0d4": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": true,
-        "custm_video_url": "",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=rqqa37AjIoI&list=TLGG9WBNJA4x4TcwNzEyMjAyMw",
-        "description": "",
-        "full_width": true,
-        "color_scheme": "",
-        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -423,10 +423,10 @@
     "50de47a7-f996-4a6d-b58d-95a761bb737e",
     "fd8003f0-fa91-4c7d-8f99-2bb233dd3615",
     "b18a84ed-5707-48d2-b87d-d05620258745",
-    "c9b0fe17-cb03-4806-8bab-0744078ee0da",
     "241f4691-2553-4f6e-bc31-ad64aa132e6b",
-    "featured_collection",
     "dc802415-49b3-4130-a1bb-b4143927a0d4",
+    "c9b0fe17-cb03-4806-8bab-0744078ee0da",
+    "featured_collection",
     "406a65c7-d10a-4160-a30c-634059fa1435"
   ]
 }
