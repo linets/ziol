@@ -55,6 +55,35 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "<strong>ADELANTA TUS COMPRAS DE NAVIDAD<\/strong>",
+        "heading_size": "h2",
+        "align_title": "center",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": true,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
     "50de47a7-f996-4a6d-b58d-95a761bb737e": {
       "type": "featured-collection",
       "settings": {
@@ -322,35 +351,6 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Must Haves",
-        "heading_size": "h2",
-        "align_title": "center",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
-      }
-    },
     "406a65c7-d10a-4160-a30c-634059fa1435": {
       "type": "multicolumn",
       "blocks": {
@@ -420,13 +420,13 @@
   },
   "order": [
     "608f3ae5-b1cf-4082-919f-3ead2712d478",
+    "featured_collection",
     "50de47a7-f996-4a6d-b58d-95a761bb737e",
     "fd8003f0-fa91-4c7d-8f99-2bb233dd3615",
     "b18a84ed-5707-48d2-b87d-d05620258745",
     "241f4691-2553-4f6e-bc31-ad64aa132e6b",
     "dc802415-49b3-4130-a1bb-b4143927a0d4",
     "c9b0fe17-cb03-4806-8bab-0744078ee0da",
-    "featured_collection",
     "406a65c7-d10a-4160-a30c-634059fa1435"
   ]
 }
