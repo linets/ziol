@@ -214,6 +214,9 @@
         "5da61721-6766-41fb-bb07-2a65464d7801",
         "9530b128-0e96-45fc-8d42-c21b286760c1"
       ],
+      "custom_css": [
+        ".title-wrapper-with-link {justify-content: center; margin-bottom: 0; margin-top: 50px;}"
+      ],
       "settings": {
         "force_full_width": true,
         "title": "THE ICONS | METALLIC OBSESSION",
@@ -236,7 +239,7 @@
     "241f4691-2553-4f6e-bc31-ad64aa132e6b": {
       "type": "image-banner",
       "custom_css": [
-        ".banner--content-align-mobile-center {margin-top:50px;}"
+        ".banner--content-align-mobile-center {margin-top: 50px;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/metalicos_desktop.webp",
