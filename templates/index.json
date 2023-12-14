@@ -6,7 +6,7 @@
         "6565bc0f-3939-488b-909e-7616f7e59da3": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/xmas_sale_mochilas_desktop.webp",
+            "image": "shopify:\/\/shop_images\/mochilas_desktop_12.jpg",
             "heading": "",
             "heading_size": "h2",
             "subheading": "",
@@ -101,6 +101,7 @@
       ],
       "settings": {
         "title": "<strong>ADELANTA TUS COMPRAS DE NAVIDAD<\/strong>",
+        "align_title": "center",
         "heading_size": "h2",
         "image_ratio": "portrait",
         "columns_desktop": 5,
@@ -133,6 +134,7 @@
       "settings": {
         "title": "Must Haves",
         "heading_size": "h2",
+        "align_title": "center",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -162,6 +164,7 @@
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": true,
+        "custm_video_url": "",
         "video_url": "https:\/\/www.youtube.com\/watch?v=rqqa37AjIoI&list=TLGG9WBNJA4x4TcwNzEyMjAyMw",
         "description": "",
         "full_width": true,
@@ -218,6 +221,7 @@
         "03714b60-d986-4306-875b-c8107dd1439e"
       ],
       "settings": {
+        "force_full_width": false,
         "title": "",
         "heading_size": "h2",
         "image_width": "full",
@@ -229,6 +233,7 @@
         "button_link": "",
         "color_scheme": "",
         "columns_mobile": "2",
+        "swipe_on_desktop": false,
         "swipe_on_mobile": true,
         "padding_top": 16,
         "padding_bottom": 20
