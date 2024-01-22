@@ -54,7 +54,7 @@
           "settings": {
             "heading": "DESCUBRE TU PRODUCTO",
             "icon": "none",
-            "content": "<p>{{ product.metafields.custom.temporada.value }}<br\/>{{ product.metafields.custom.formato.value }}<\/p>",
+            "content": "<p>{{ product.metafields.global.temporada.value }}<br\/>{{ product.metafields.custom.formato.value }}<\/p>",
             "page": ""
           }
         },
