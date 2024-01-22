@@ -48,6 +48,7 @@ function magnify(image, zoomRatio) {
   overlay.onclick = () => overlay.remove();
   overlay.onmousemove = (event) => moveWithHover(image, event, zoomRatio);
   overlay.onmouseleave = () => overlay.remove();
+  overlay.ontouchmove = (event) => moveWithHover(image, event, zoomRatio);
 }
 
 function enableZoomOnHover(zoomRatio) {
@@ -65,4 +66,50 @@ function enableZoomOnHover(zoomRatio) {
   });
 }
 
+function enableZoomOnTouch(zoomRatio) {
+  let isZoom = false;
+  var inicioX = 0;
+  const images = document.querySelectorAll('.product__media-item');
+  images.forEach((image) => {
+    image.addEventListener('touchstart', event => {
+      event.stopPropagation();
+      event.preventDefault();
+      inicioX = event.touches[0].clientX;
+    })
+    image.addEventListener('touchmove', event => {
+      event.stopPropagation();
+      event.preventDefault();
+      // const currentImage = event?.target?.previousElementSibling?.firstElementChild;
+      var desplazamientoX = event.touches[0].clientX - inicioX;
+
+      if (event.touches.length >= 2) {
+        isZoom = true;
+        dedo1 = { x: event.touches[0].clientX, y: event.touches[0].clientY };
+        dedo2 = { x: event.touches[1].clientX, y: event.touches[1].clientY };
+        var distancia = Math.sqrt(
+          Math.pow(dedo2.x - dedo1.x, 2) + Math.pow(dedo2.y - dedo1.y, 2)
+        );
+        var umbral = 100;
+        if (distancia > umbral) {
+
+          document.querySelector('.product__media-toggle').click()
+        }
+      }
+
+      console.log("inicioX", inicioX, desplazamientoX)
+
+      if (inicioX) {
+        if (desplazamientoX > 0) {
+          document.querySelector(".product--thumbnail_slider .slider-button--prev").click()
+        }
+        if (desplazamientoX < 0) {
+          document.querySelector(".product--thumbnail_slider .slider-button--next").click()
+        }
+        inicioX = 0;
+      }
+    })
+  })
+}
+
+enableZoomOnTouch(2);
 enableZoomOnHover(2);
