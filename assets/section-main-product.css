@@ -1744,3 +1744,21 @@ div[id^="price-template"] {
 .related-products__heading {
   text-align: center;
 }
+
+.media-custom-zoom {
+  width: 100vw;
+}
+
+@media screen and (max-width: 800px) {
+  .product-media-modal__dialog {
+    align-items: flex-start;
+  }
+
+  .product-media-modal__toggle {
+    z-index: 10000000;
+  }
+
+  .product-media-modal__content {
+    margin-top: 70px;
+  }
+}
