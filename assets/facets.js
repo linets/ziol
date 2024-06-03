@@ -298,7 +298,7 @@ class PriceRange extends HTMLElement {
     const max = Number(input.getAttribute('max'));
 
     if (value < min) input.value = min;
-    if (value > max) input.value = max;
+    //if (value > max) input.value = max;
   }
 }
 
