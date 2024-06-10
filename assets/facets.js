@@ -3,9 +3,11 @@ class FacetFiltersForm extends HTMLElement {
     super();
     this.onActiveFilterClick = this.onActiveFilterClick.bind(this);
 
+    this.onCheckColorsHandler(event);
     this.debouncedOnSubmit = debounce((event) => {
+      this.onCheckColorsHandler(event);
       this.onSubmitHandler(event);
-    }, 500);
+    }, 2000);
 
     const facetForm = this.querySelector('form');
     facetForm.addEventListener('input', this.debouncedOnSubmit.bind(this));
@@ -34,7 +36,9 @@ class FacetFiltersForm extends HTMLElement {
     const sections = FacetFiltersForm.getSections();
     const countContainer = document.getElementById('ProductCount');
     const countContainerDesktop = document.getElementById('ProductCountDesktop');
-    const loadingSpinners = document.querySelectorAll('.facets-container .loading__spinner, facet-filters-form .loading__spinner');
+    const loadingSpinners = document.querySelectorAll(
+      '.facets-container .loading__spinner, facet-filters-form .loading__spinner'
+    );
     loadingSpinners.forEach((spinner) => spinner.classList.remove('hidden'));
     document.getElementById('ProductGridContainer').querySelector('.collection').classList.add('loading');
     if (countContainer) {
@@ -61,7 +65,7 @@ class FacetFiltersForm extends HTMLElement {
       .then((response) => response.text())
       .then((responseText) => {
         const html = responseText;
-        console.log("==", html);
+        console.log('==', html);
         FacetFiltersForm.filterData = [...FacetFiltersForm.filterData, { html, url }];
         FacetFiltersForm.renderFilters(html, event);
         FacetFiltersForm.renderProductGridContainer(html);
@@ -101,7 +105,9 @@ class FacetFiltersForm extends HTMLElement {
       containerDesktop.innerHTML = count;
       containerDesktop.classList.remove('loading');
     }
-    const loadingSpinners = document.querySelectorAll('.facets-container .loading__spinner, facet-filters-form .loading__spinner');
+    const loadingSpinners = document.querySelectorAll(
+      '.facets-container .loading__spinner, facet-filters-form .loading__spinner'
+    );
     loadingSpinners.forEach((spinner) => spinner.classList.add('hidden'));
   }
 
@@ -249,6 +255,70 @@ class FacetFiltersForm extends HTMLElement {
       });
       this.onSubmitForm(forms.join('&'), event);
     }
+  }
+
+  onCheckColorsHandler(event) {
+    // Desktop
+    let parentContent = document.querySelectorAll('.facets__disclosure-vertical.js-filter');
+    parentContent.forEach((e) => {
+      if (e.querySelector('.facets__summary span') != null) {
+        let headerLabel = e.querySelector('.facets__summary span').innerText;
+        headerLabel = headerLabel.toLowerCase().replace(' ', '');
+        if (headerLabel.includes('colores')) {
+          e.classList.add('disabled-far');
+          setTimeout(() => {
+            let listItems = e.querySelectorAll('ul.facets-layout-list li.facets__item');
+            listItems.forEach((x) => {
+              let titleColor = x.querySelector('label .facet-checkbox__text').innerHTML.split(' ')[0];
+              let labelHandler = x.querySelector('label');
+              if (labelHandler.classList.contains('facet-checkbox--disabled')) {
+                x.classList.add('facet-disabled-color');
+              }
+
+              window.globalColorCombination.forEach((color) => {
+                if (color.combination.toLowerCase().includes(titleColor.toLowerCase())) {
+                  x.classList.add('custom-color');
+                  x.style.backgroundColor = color.color;
+                  x.style.color = color.color;
+                }
+              });
+            });
+            e.classList.remove('disabled-far');
+          }, '2000');
+        }
+      }
+    });
+
+    // Mobile
+    let parentContentMobile = document.querySelectorAll('.mobile-facets__details.js-filter');
+    parentContentMobile.forEach((e) => {
+      if (e.querySelector('.mobile-facets__summary span') != null) {
+        let headerLabelMobile = e.querySelector('.mobile-facets__summary span').innerHTML;
+        headerLabelMobile = headerLabelMobile.toLowerCase().replace(' ', '');
+        if (headerLabelMobile.includes('colores')) {
+          e.classList.add('disabled-far');
+          setTimeout(() => {
+            let listItemsMobile = e.querySelectorAll('ul.facets-layout-list li.mobile-facets__item');
+            listItemsMobile.forEach((x) => {
+              let titleColorMobile = x.querySelector('label .facet-checkbox__text').innerHTML.split(' ')[0];
+              let labelHandlerMobile = x.querySelector('label');
+              if (labelHandlerMobile.classList.contains('facet-checkbox--disabled')) {
+                x.classList.add('facet-disabled-color');
+              }
+
+              window.globalColorCombination.forEach((color) => {
+                if (color.combination.toLowerCase().includes(titleColorMobile.toLowerCase())) {
+                  x.classList.add('custom-color');
+                  x.style.backgroundColor = color.color;
+                  x.style.color = color.color;
+                }
+              });
+            });
+            e.classList.remove('disabled-far');
+          }, '2000');
+        }
+      }
+    });
   }
 
   onActiveFilterClick(event) {
