@@ -1249,3 +1249,13 @@
     </facet-filters-form>
   {%- endif -%}
 </div>
+
+<script>
+  function colorCombinations(color, combination) { this.color = color; this.combination = combination; }
+  let colorCombinationsArr = [];
+
+  {% for color in shop.metaobjects.custom_colors.values %}
+    colorCombinationsArr.push(new colorCombinations("{{ color.color }}", "{{ color.combinations }}"));
+  {% endfor %}
+  window.globalColorCombination = colorCombinationsArr; // creates a global variable globalColorCombination
+</script>
