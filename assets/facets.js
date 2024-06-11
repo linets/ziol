@@ -266,6 +266,7 @@ class FacetFiltersForm extends HTMLElement {
         headerLabel = headerLabel.toLowerCase().replace(' ', '');
         if (headerLabel.includes('colores')) {
           e.classList.add('disabled-far');
+          e.classList.add('parent-custom-color');
           setTimeout(() => {
             let listItems = e.querySelectorAll('ul.facets-layout-list li.facets__item');
             listItems.forEach((x) => {
@@ -297,6 +298,7 @@ class FacetFiltersForm extends HTMLElement {
         headerLabelMobile = headerLabelMobile.toLowerCase().replace(' ', '');
         if (headerLabelMobile.includes('colores')) {
           e.classList.add('disabled-far');
+          e.classList.add('parent-custom-color');
           setTimeout(() => {
             let listItemsMobile = e.querySelectorAll('ul.facets-layout-list li.mobile-facets__item');
             listItemsMobile.forEach((x) => {
