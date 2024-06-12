@@ -21,26 +21,29 @@
       {% endif %}
       {{ block.shopify_attributes }}
     >
-
       {%- for option in product.options_with_values -%}
-        {% if option.name == 'Color' and product.options.size == 1 %}
+        {% if option.name == 'Color' %}
           <fieldset class="js product-form__input">
             <legend class="form__label">{{ option.name }}</legend>
-            
 
-              {%- assign style = product.metafields.global.style.value -%}
-              {% for product_similar in collections[product.collections[0].handle].all_products %}
+            {%- assign style = product.metafields.global.style.value -%}
+            {% assign item_id = '' %}
+
+            {% for collection in product.collections %}
+              {% for product_similar in collections[collection.handle].all_products %}
                 {% if product_similar.metafields.global.style.value == style %}
+                  {% unless item_id contains product_similar.handle %}
+                    {% assign item_id = item_id | append: ' : ' | append: product_similar.handle %}
                     <a class="link" href="{{ product_similar.url }}">
-                    <img
+                      <img
                         class="relations-sku {% if product.handle == product_similar.handle %}active{% endif %}"
                         src="{{ product_similar.featured_image | product_img_url: 'small' }}"
                       >
                     </a>
-                  {% endif %}
-                
+                  {% endunless %}
+                {% endif %}
               {% endfor %}
-            
+            {% endfor %}
           </fieldset>
         {% else %}
           <fieldset class="js product-form__input">
