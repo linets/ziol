@@ -52,12 +52,9 @@
       name="{{ option.name }}"
       value="{{ value | escape }}"
       form="{{ product_form_id }}"
-      class="product-option product-option-color"
+      class="product-option product-option-color{% if option_disabled %} disabled{% endif %}"
       {% if option.selected_value == value %}
         checked
-      {% endif %}
-      {% if option_disabled %}
-        class="disabled"
       {% endif %}
     >
 
