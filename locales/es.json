@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin language editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "general": {
     "password_page": {
@@ -535,7 +544,10 @@
         "postcode_label": "Número de casa",
         "postcode_placeholder": "Número de casa",
         "address2_label": "Detalles adicionales",
-        "optional_address2_label": "Detalles adicionales"
+        "optional_address2_label": "Detalles adicionales",
+        "optional_zip_code_label": "Número de casa",
+        "optional_postal_code_label": "Número de casa",
+        "optional_postcode_label": "Número de casa"
       },
       "field_errors": {
         "address_company_blank": "Introduce un número de RUT",
