@@ -223,7 +223,30 @@
                                   style="background: {{customColor}}"
                                   class="list-menu_color {{value.value}}"
                                   for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
+                                  alt="{{ value.value }}"
                                 >
+                                  {% style %}
+                                    .list-menu_color{
+                                      position: relative;
+                                      overflow: initial;
+                                    } 
+                                    .list-menu_color.{{value.value}}::after{
+                                      content: "{{value.value}}";
+                                      border: 1px solid #000;
+                                      position: absolute;
+                                      top: -15px;
+                                      font-size: 10px;
+                                      padding: 5px;
+                                      border-radius: 20px;
+                                      color: #000;
+                                      background: #fff;
+                                      font-weight: bold;
+                                      display: none;
+                                      z-index: 9;
+                                    }
+                                    .list-menu_color.{{value.value}}:hover::after{ display: block; }
+                                  {% endstyle %}
+                                  
                                   <input
                                     type="checkbox"
                                     name="{{ value.param_name }}"
