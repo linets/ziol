@@ -65,7 +65,6 @@ class FacetFiltersForm extends HTMLElement {
       .then((response) => response.text())
       .then((responseText) => {
         const html = responseText;
-        console.log('==', html);
         FacetFiltersForm.filterData = [...FacetFiltersForm.filterData, { html, url }];
         FacetFiltersForm.renderFilters(html, event);
         FacetFiltersForm.renderProductGridContainer(html);
