@@ -243,7 +243,7 @@
                     {% assign count_2_options = count_2_options | plus : 1 %}
                   {% endif %}
                 {% endfor %}
-                {% if count_1_options > 1 or count_2_options > 1 %}
+                {% if count_1_options > 0 or count_2_options > 1 %}
                   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
                 {% endif %}
               {%- when 'buy_buttons' -%}
