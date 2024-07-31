@@ -15,7 +15,7 @@
 }
 
 .card__content {
-  position: relative !important;
+  position: initial;
 }
 
 .card--card .quick-add {
