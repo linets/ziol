@@ -1718,8 +1718,6 @@ div[id^="price-template"] {
 }
 
 .price__badge-sale {
-  background: #3C3C3B1D;
-  color: #000;
   height: 27px;
   border-radius: 0;
   font-size: 18px;
@@ -1727,6 +1725,11 @@ div[id^="price-template"] {
   display: block;
   margin-bottom: 0 !important;
   line-height: 24px;
+  position: relative;
+  top: initial;
+  left: initial;
+  background: #000;
+  color: rgb(var(--color-badge-foreground));
 }
 
 .price__container {
