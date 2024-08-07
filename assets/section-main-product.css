@@ -1763,8 +1763,8 @@ div[id^="price-template"] {
 }
 
 .product-form__submit {
-  background: #fff !important;
-  color: #3c3c3b;
+  background: #000 !important;
+  color: #fff;
   font-size: 18px;
   width: auto;
 }
