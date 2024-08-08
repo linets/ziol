@@ -88,7 +88,7 @@
               {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
                 {{ 'products.product.sold_out' | t }}
               {%- else -%}
-                COMPRAR
+                AGREGAR AL CARRITO
               {%- endif -%}
             </span>
             {%- render 'loading-spinner' -%}
