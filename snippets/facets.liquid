@@ -220,10 +220,12 @@
                                   alt="{{ value.value }}"
                                 >
                                   {% style %}
+                                    .list-menu__item--Colores .facets__item{ display: inline-flex; }
                                     .list-menu_color{
                                       position: relative;
                                       overflow: initial;
                                     } 
+                                    .list-menu_color input{ visibility: hidden; }
                                     .list-menu_color.{{value.value}}::after{
                                       content: "{{value.value}}";
                                       border: 1px solid #000;
