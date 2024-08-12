@@ -221,7 +221,7 @@
 }
 .mobile-facets__details.disabled-far,
 .facets__disclosure-vertical.js-filter.disabled-far{
-  display: none;
+  /*display: none;*/
 }
 .facets__disclosure fieldset {
   padding: 0;
