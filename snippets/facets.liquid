@@ -204,7 +204,9 @@
                             %}
 
                             <li class="list-menu__item {% if value.active %} list-menu__item--active {% endif %} facets__item{% if forloop.index > show_more_number and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
+                              {{ filter.label }} --------- rrrrrr
                               {%- if filter.label == 'Color' or filter.label == 'Colores' -%}
+                                sssssssssxxxxxxxxxxxxxxxxa
                                 {%- assign customColor = value.value %}
                                 {% for item in shop.metaobjects.custom_colors.values %}
                                   {% if item.combinations contains value.value %}
