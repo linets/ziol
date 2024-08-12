@@ -26,11 +26,6 @@
   endif
 -%}
 
-<style>
-  .test {
-  }
-</style>
-
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
     <facet-filters-form class="facets small-hide">
@@ -218,7 +213,6 @@
                                     %}
                                   {% endif %}
                                 {% endfor %}
-
                                 <label
                                   style="background: {{customColor}}"
                                   class="list-menu_color {{value.value}}"
@@ -1271,3 +1265,13 @@
     </facet-filters-form>
   {%- endif -%}
 </div>
+
+<script>
+  function colorCombinations(color, combination) { this.color = color; this.combination = combination; }
+  let colorCombinationsArr = [];
+
+  {% for color in shop.metaobjects.custom_colors.values %}
+    colorCombinationsArr.push(new colorCombinations("{{ color.color }}", "{{ color.combinations }}"));
+  {% endfor %}
+  window.globalColorCombination = colorCombinationsArr; // creates a global variable globalColorCombination
+</script>
