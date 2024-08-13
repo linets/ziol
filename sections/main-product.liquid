@@ -632,7 +632,7 @@
                 {% render 'icon-caret' %}
               </summary>
               <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-               {% if product.metafields.global.formato != blank %}
+                {% if product.metafields.global.formato != blank %}
                   <div>
                     <strong>Formato:</strong> <span>{{ product.metafields.global.formato.value }}</span>
                   </div>
@@ -673,11 +673,6 @@
                     <span>{{ product.metafields.global.altura_plataforma.value }} CM</span>
                   </div>
                 {% endif %}
-                {% if product.metafields.global.altura_correa != blank %}
-                  <div>
-                    <strong>Altura correa:</strong> <span>{{ product.metafields.global.altura_correa.value }} CM</span>
-                  </div>
-                {% endif %}
                 {% if product.metafields.global.altura_cania != blank %}
                   <div>
                     <strong>Altura caña:</strong> <span>{{ product.metafields.global.altura_cania.value }} CM</span>
@@ -693,7 +688,13 @@
                     <strong>Correa ajustable:</strong>
                     <span>{{ product.metafields.global.correa_ajustable.value }}</span>
                   </div>
-                {% endif %}             
+                {% endif %}
+                {% if product.metafields.global.correa_intercambiable != blank %}
+                  <div>
+                    <strong>Correa intercambiable:</strong>
+                    <span>{{ product.metafields.global.correa_intercambiable.value }}</span>
+                  </div>
+                {% endif %}
                 {% if product.metafields.global.compartimiento_notebook != blank %}
                   <div>
                     <strong>Compartimiento notebook:</strong>
@@ -801,18 +802,7 @@
                     <strong>Filtro uv:</strong> <span>{{ product.metafields.global.filtro_uv.value }}</span>
                   </div>
                 {% endif %}
-                {% if product.metafields.global.correa_intercambiable != blank %}
-                  <div>
-                    <strong>Correa intercambiable:</strong>
-                    <span>{{ product.metafields.global.correa_intercambiable.value }}</span>
-                  </div>
-                {% endif %}
-                {% if product.metafields.global.correa_ajustable != blank %}
-                  <div>
-                    <strong>Correa ajustable:</strong>
-                    <span>{{ product.metafields.global.correa_ajustable.value }}</span>
-                  </div>
-                {% endif %}
+               
               </div>
             </details>
           </div>
