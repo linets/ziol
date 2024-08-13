@@ -15,8 +15,8 @@
         "6565bc0f-3939-488b-909e-7616f7e59da3": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Banner-principal_1.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/ziol-mobile_500x700_adac8284-356f-489f-938c-c15d50ca54d0.png",
+            "image": "shopify:\/\/shop_images\/AVANCE_DESKTOP.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/AVANCE_MOBILE.jpg",
             "heading": "",
             "heading_size": "h2",
             "subheading": "",
@@ -34,43 +34,6 @@
       },
       "block_order": [
         "6565bc0f-3939-488b-909e-7616f7e59da3"
-      ],
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "dots",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": false,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "slideshow_eeiRAt": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_qMYM3E": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Banner_mochilas.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/mochilas_mobile_13_719068ae-20d6-4721-ac81-3f8d47f6774a.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_qMYM3E"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -312,7 +275,6 @@
   },
   "order": [
     "608f3ae5-b1cf-4082-919f-3ead2712d478",
-    "slideshow_eeiRAt",
     "featured_collection_hE3XCK",
     "image_banner_pXTjMn",
     "image_banner_4eac9P",
