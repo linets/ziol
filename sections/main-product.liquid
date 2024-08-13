@@ -632,21 +632,78 @@
                 {% render 'icon-caret' %}
               </summary>
               <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+               {% if product.metafields.global.formato != blank %}
+                  <div>
+                    <strong>Formato:</strong> <span>{{ product.metafields.global.formato.value }}</span>
+                  </div>
+                {% endif %}
+                {% if product.metafields.global.nombre_style != blank %}
+                  <div>
+                    <strong>Nombre producto:</strong> <span>{{ product.metafields.global.nombre_style.value }}</span>
+                  </div>
+                {% endif %}
+                {% if product.metafields.global.alto != blank %}
+                  <div>
+                    <strong>Alto:</strong> <span>{{ product.metafields.global.alto.value }}</span>
+                  </div>
+                {% endif %}
+                {% if product.metafields.global.ancho != blank %}
+                  <div>
+                    <strong>Ancho:</strong> <span>{{ product.metafields.global.ancho.value }}</span>
+                  </div>
+                {% endif %}
+                {% if product.metafields.global.fuelle != blank %}
+                  <div>
+                    <strong>Fuelle:</strong> <span>{{ product.metafields.global.fuelle.value }}</span>
+                  </div>
+                {% endif %}
+                {% if product.metafields.global.litros != blank %}
+                  <div>
+                    <strong>Litros:</strong> <span>{{ product.metafields.global.litros.value }}</span>
+                  </div>
+                {% endif %}
+                {% if product.metafields.global.altura_taco != blank %}
+                  <div>
+                    <strong>Altura taco:</strong> <span>{{ product.metafields.global.altura_taco.value }} CM</span>
+                  </div>
+                {% endif %}
+                {% if product.metafields.global.altura_plataforma != blank %}
+                  <div>
+                    <strong>Altura plataforma:</strong>
+                    <span>{{ product.metafields.global.altura_plataforma.value }} CM</span>
+                  </div>
+                {% endif %}
+                {% if product.metafields.global.altura_correa != blank %}
+                  <div>
+                    <strong>Altura correa:</strong> <span>{{ product.metafields.global.altura_correa.value }} CM</span>
+                  </div>
+                {% endif %}
+                {% if product.metafields.global.altura_cania != blank %}
+                  <div>
+                    <strong>Altura caña:</strong> <span>{{ product.metafields.global.altura_cania.value }} CM</span>
+                  </div>
+                {% endif %}
+                {% if product.metafields.global.altura_correa != blank %}
+                  <div>
+                    <strong>Altura correa:</strong> <span>{{ product.metafields.global.altura_correa.value }} CM</span>
+                  </div>
+                {% endif %}
                 {% if product.metafields.global.correa_ajustable != blank %}
                   <div>
                     <strong>Correa ajustable:</strong>
                     <span>{{ product.metafields.global.correa_ajustable.value }}</span>
                   </div>
-                {% endif %}
-                {% if product.metafields.global.con_monedero != blank %}
-                  <div>
-                    <strong>Con monedero:</strong> <span>{{ product.metafields.global.con_monedero.value }}</span>
-                  </div>
-                {% endif %}
+                {% endif %}             
                 {% if product.metafields.global.compartimiento_notebook != blank %}
                   <div>
                     <strong>Compartimiento notebook:</strong>
                     <span>{{ product.metafields.global.compartimiento_notebook.value }}</span>
+                  </div>
+                {% endif %}
+                {% if product.metafields.global.pulgadas_notebook != blank %}
+                  <div>
+                    <strong>Pulgadas notebook:</strong>
+                    <span>{{ product.metafields.global.pulgadas_notebook.value }}</span>
                   </div>
                 {% endif %}
                 {% if product.metafields.global.cierres_interiores != blank %}
@@ -679,40 +736,9 @@
                     <span>{{ product.metafields.global.bolsillo_trasero.value }}</span>
                   </div>
                 {% endif %}
-                {% if product.metafields.global.ancho != blank %}
+                {% if product.metafields.global.con_monedero != blank %}
                   <div>
-                    <strong>Ancho:</strong> <span>{{ product.metafields.global.ancho.value }}</span>
-                  </div>
-                {% endif %}
-                {% if product.metafields.global.altura_taco != blank %}
-                  <div>
-                    <strong>Altura taco:</strong> <span>{{ product.metafields.global.altura_taco.value }}</span>
-                  </div>
-                {% endif %}
-                {% if product.metafields.global.altura_plataforma != blank %}
-                  <div>
-                    <strong>Altura plataforma:</strong>
-                    <span>{{ product.metafields.global.altura_plataforma.value }}</span>
-                  </div>
-                {% endif %}
-                {% if product.metafields.global.altura_correa != blank %}
-                  <div>
-                    <strong>Altura correa:</strong> <span>{{ product.metafields.global.altura_correa.value }}</span>
-                  </div>
-                {% endif %}
-                {% if product.metafields.global.altura_cania != blank %}
-                  <div>
-                    <strong>Altura cania:</strong> <span>{{ product.metafields.global.altura_cania.value }}</span>
-                  </div>
-                {% endif %}
-                {% if product.metafields.global.altura_asa != blank %}
-                  <div>
-                    <strong>Altura asa:</strong> <span>{{ product.metafields.global.altura_asa.value }}</span>
-                  </div>
-                {% endif %}
-                {% if product.metafields.global.alto != blank %}
-                  <div>
-                    <strong>Alto:</strong> <span>{{ product.metafields.global.alto.value }}</span>
+                    <strong>Con monedero:</strong> <span>{{ product.metafields.global.con_monedero.value }}</span>
                   </div>
                 {% endif %}
                 {% if product.metafields.global.accesorio_adicional != blank %}
@@ -727,40 +753,14 @@
                     <span>{{ product.metafields.global.acabado_del_metal.value }}</span>
                   </div>
                 {% endif %}
-                {% if product.metafields.global.temporada != blank %}
-                  <div>
-                    <strong>Temporada:</strong> <span>{{ product.metafields.global.temporada.value }}</span>
-                  </div>
-                {% endif %}
-                {% if product.metafields.global.uso != blank %}
-                  <div>
-                    <strong>Uso:</strong> <span>{{ product.metafields.global.uso.value }}</span>
-                  </div>
-                {% endif %}
                 {% if product.metafields.global.tipo_apertura != blank %}
                   <div>
                     <strong>Tipo apertura:</strong> <span>{{ product.metafields.global.tipo_apertura.value }}</span>
                   </div>
-                {% endif %}
-                {% if product.metafields.global.textura != blank %}
+                {% endif %}  
+                {% if product.metafields.global.filtro_material != blank %}
                   <div>
-                    <strong>Textura:</strong> <span>{{ product.metafields.global.textura.value }}</span>
-                  </div>
-                {% endif %}
-                {% if product.metafields.global.cod_style != blank %}
-                  <div>
-                    <strong>Cod style:</strong> <span>{{ product.metafields.global.cod_style.value }}</span>
-                  </div>
-                {% endif %}
-                {% if product.metafields.global.pulgadas_notebook != blank %}
-                  <div>
-                    <strong>Pulgadas notebook:</strong>
-                    <span>{{ product.metafields.global.pulgadas_notebook.value }}</span>
-                  </div>
-                {% endif %}
-                {% if product.metafields.global.nombre_style != blank %}
-                  <div>
-                    <strong>Nombre style:</strong> <span>{{ product.metafields.global.nombre_style.value }}</span>
+                    <strong>Material:</strong> <span>{{ product.metafields.global.filtro_material.value }}</span>
                   </div>
                 {% endif %}
                 {% if product.metafields.global.material_plantilla != blank %}
@@ -769,10 +769,10 @@
                     <span>{{ product.metafields.global.material_plantilla.value }}</span>
                   </div>
                 {% endif %}
-                {% if product.metafields.global.material_forro_interior != blank %}
+                {% if product.metafields.global.material_forro != blank %}
                   <div>
-                    <strong>Material forro interior:</strong>
-                    <span>{{ product.metafields.global.material_forro_interior.value }}</span>
+                    <strong>Material forro:</strong>
+                    <span>{{ product.metafields.global.material_forro.value }}</span>
                   </div>
                 {% endif %}
                 {% if product.metafields.global.material_suela != blank %}
@@ -786,36 +786,16 @@
                     <span>{{ product.metafields.global.material_capellada.value }}</span>
                   </div>
                 {% endif %}
-                {% if product.metafields.global.litros != blank %}
+                {% if product.metafields.global.textura != blank %}
                   <div>
-                    <strong>Litros:</strong> <span>{{ product.metafields.global.litros.value }}</span>
-                  </div>
-                {% endif %}
-                {% if product.metafields.global.hecho_en != blank %}
-                  <div>
-                    <strong>Hecho en:</strong> <span>{{ product.metafields.global.hecho_en.value }}</span>
+                    <strong>Textura:</strong> <span>{{ product.metafields.global.textura.value }}</span>
                   </div>
                 {% endif %}
                 {% if product.metafields.global.genero != blank %}
                   <div>
                     <strong>Genero:</strong> <span>{{ product.metafields.global.genero.value }}</span>
                   </div>
-                {% endif %}
-                {% if product.metafields.global.fuelle != blank %}
-                  <div>
-                    <strong>Fuelle:</strong> <span>{{ product.metafields.global.fuelle.value }}</span>
-                  </div>
-                {% endif %}
-                {% if product.metafields.global.formato != blank %}
-                  <div>
-                    <strong>Formato:</strong> <span>{{ product.metafields.global.formato.value }}</span>
-                  </div>
-                {% endif %}
-                {% if product.metafields.global.material != blank %}
-                  <div>
-                    <strong>Material:</strong> <span>{{ product.metafields.global.material.value }}</span>
-                  </div>
-                {% endif %}
+                {% endif %}               
                 {% if product.metafields.global.filtro_uv != blank %}
                   <div>
                     <strong>Filtro uv:</strong> <span>{{ product.metafields.global.filtro_uv.value }}</span>
@@ -825,6 +805,12 @@
                   <div>
                     <strong>Correa intercambiable:</strong>
                     <span>{{ product.metafields.global.correa_intercambiable.value }}</span>
+                  </div>
+                {% endif %}
+                {% if product.metafields.global.correa_ajustable != blank %}
+                  <div>
+                    <strong>Correa ajustable:</strong>
+                    <span>{{ product.metafields.global.correa_ajustable.value }}</span>
                   </div>
                 {% endif %}
               </div>
