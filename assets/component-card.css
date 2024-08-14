@@ -168,6 +168,7 @@
   position: absolute;
   top: 20px;
   left: 10px;
+  display: none;
 }
 
 .card__badge.top {
