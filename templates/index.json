@@ -339,6 +339,7 @@
     },
     "dc802415-49b3-4130-a1bb-b4143927a0d4": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -357,6 +358,7 @@
       "blocks": {
         "retail_rocket_personalization_markups_9d6n4Y": {
           "type": "shopify:\/\/apps\/retail-rocket-personalization\/blocks\/markups\/eb06115a-3169-4b5b-a921-16aac205bb7d",
+          "disabled": true,
           "settings": {
             "rrMarkupCode": "659548da9b15095e98a658f2",
             "rrEmptyMarkupCode": ""
@@ -375,6 +377,7 @@
       "blocks": {
         "retail_rocket_personalization_markups_E9pptQ": {
           "type": "shopify:\/\/apps\/retail-rocket-personalization\/blocks\/markups\/eb06115a-3169-4b5b-a921-16aac205bb7d",
+          "disabled": true,
           "settings": {
             "rrMarkupCode": "659550249b15095e98a65945",
             "rrEmptyMarkupCode": ""
