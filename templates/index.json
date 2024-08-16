@@ -46,33 +46,84 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "featured_collection_hE3XCK": {
-      "type": "featured-collection",
+    "multicolumn_jQXtqr": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_hMYX63": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/new-in"
+          }
+        },
+        "column_DfNhbm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/products\/gabriela-bandolera-negro-pequena"
+          }
+        },
+        "column_jEbzwx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/products\/ofelia-mochila-beige-oscuro-mediana"
+          }
+        },
+        "column_BnyQ8a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/products\/nahia-mochila-negro-especial-mediana"
+          }
+        },
+        "column_UBPWFc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/products\/elaia-bandolera-camel-pequena"
+          }
+        }
+      },
+      "block_order": [
+        "column_hMYX63",
+        "column_DfNhbm",
+        "column_jEbzwx",
+        "column_BnyQ8a",
+        "column_UBPWFc"
+      ],
       "settings": {
-        "title": "SPECIAL PRICE | MOCHILAS",
+        "force_full_width": true,
+        "title": "",
         "heading_size": "h1",
-        "align_title": "center",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "mochilas",
-        "products_to_show": 10,
-        "columns_desktop": 5,
-        "full_width": true,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "",
+        "image_width": "full",
         "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "columns_desktop": 5,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_desktop": false,
+        "swipe_on_mobile": false,
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     },
     "image_banner_pXTjMn": {
@@ -275,7 +326,7 @@
   },
   "order": [
     "608f3ae5-b1cf-4082-919f-3ead2712d478",
-    "featured_collection_hE3XCK",
+    "multicolumn_jQXtqr",
     "image_banner_pXTjMn",
     "image_banner_4eac9P",
     "featured_collection_Ltj79V",
