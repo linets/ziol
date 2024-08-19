@@ -146,13 +146,6 @@
 
     ],
     "blocks": {
-      "3162008616520556380": {
-        "type": "shopify:\/\/apps\/retail-rocket-personalization\/blocks\/main-code\/eb06115a-3169-4b5b-a921-16aac205bb7d",
-        "disabled": false,
-        "settings": {
-          "rrPartnerId": "659535f486274315dbabf620"
-        }
-      },
       "13699062826762247329": {
         "type": "shopify:\/\/apps\/retail-rocket-personalization\/blocks\/tracking-codes\/eb06115a-3169-4b5b-a921-16aac205bb7d",
         "disabled": false,
@@ -163,6 +156,13 @@
           ],
           "tagstosend": "",
           "metafieldtosend": ""
+        }
+      },
+      "3162008616520556380": {
+        "type": "shopify:\/\/apps\/retail-rocket-personalization\/blocks\/main-code\/eb06115a-3169-4b5b-a921-16aac205bb7d",
+        "disabled": false,
+        "settings": {
+          "rrPartnerId": "60462b6f97a5281698d7180b"
         }
       }
     },
