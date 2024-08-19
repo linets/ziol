@@ -429,7 +429,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "#MainContent {position: relative; z-index: 1;}"
+      "#MainContent {position: relative; z-index: 1; overflow: hidden;}"
     ]
   }
 }
