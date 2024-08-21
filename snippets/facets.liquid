@@ -204,7 +204,7 @@
                             %}
 
                             <li class="list-menu__item {% if value.active %} list-menu__item--active {% endif %} facets__item{% if forloop.index > show_more_number and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
-                              {%- if filter.label contains 'Color' -%}
+                              {%- if filter.label == 'Color' -%}
                                 {%- assign customColor = value.value %}
                                 {% for item in shop.metaobjects.custom_colors.values %}
                                   {% if item.combinations contains value.value %}
@@ -213,6 +213,7 @@
                                     %}
                                   {% endif %}
                                 {% endfor %}
+
                                 <label
                                   style="background: {{customColor}}"
                                   class="list-menu_color {{value.value}}"
@@ -220,12 +221,10 @@
                                   alt="{{ value.value }}"
                                 >
                                   {% style %}
-                                    .list-menu__item--Colores .facets__item{ display: inline-flex; }
                                     .list-menu_color{
                                       position: relative;
                                       overflow: initial;
                                     } 
-                                    .list-menu_color input{ visibility: hidden; }
                                     .list-menu_color.{{value.value}}::after{
                                       content: "{{value.value}}";
                                       border: 1px solid #000;
@@ -502,7 +501,7 @@
                             {% endif %}
                           >
                           <label class="field__label" for="Filter-{{ filter.label | escape }}-LTE">
-                            {{- 'products.facets.to' | t -}}
+                            Hasta
                           </label>
                         </div>
                       </price-range>
@@ -804,8 +803,16 @@
 
                               <li class="mobile-facets__item list-menu__item">
                                 {%- if filter.label == 'Color' -%}
+                                  {%- assign customColor = value.value %}
+                                    {% for item in shop.metaobjects.custom_colors.values %}
+                                      {% if item.combinations contains value.value %}
+                                        {% liquid
+                                          assign customColor = item.color
+                                        %}
+                                      {% endif %}
+                                  {% endfor %}
                                   <label
-                                    style="background: {{value.value}}"
+                                    style="background: {{customColor}}"
                                     class="list-menu_color {{value.value | downcase | replace: ' ', '-' }} {% if value.active %} list-menu__item--active {% endif %}"
                                     for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
                                   >
@@ -1007,7 +1014,7 @@
                                 {% endif %}
                               >
                               <label class="field__label" for="Mobile-Filter-{{ filter.label | escape }}-LTE">
-                                {{- 'products.facets.to' | t -}}
+                                Hasta
                               </label>
                             </div>
                           </price-range>
@@ -1267,13 +1274,3 @@
     </facet-filters-form>
   {%- endif -%}
 </div>
-
-<script>
-  function colorCombinations(color, combination) { this.color = color; this.combination = combination; }
-  let colorCombinationsArr = [];
-
-  {% for color in shop.metaobjects.custom_colors.values %}
-    colorCombinationsArr.push(new colorCombinations("{{ color.color }}", "{{ color.combinations }}"));
-  {% endfor %}
-  window.globalColorCombination = colorCombinationsArr; // creates a global variable globalColorCombination
-</script>
