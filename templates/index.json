@@ -12,35 +12,16 @@
     "608f3ae5-b1cf-4082-919f-3ead2712d478": {
       "type": "slideshow",
       "blocks": {
-        "slide_XETjTq": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/up_to_50__desktop.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/up_to_50__mobile.jpg",
-            "heading": "",
-            "heading_size": "h2",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify:\/\/collections\/carteras",
-            "button_style_secondary": false,
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
         "6565bc0f-3939-488b-909e-7616f7e59da3": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_DESKTOP.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/1_MOBILE.jpg",
+            "image": "shopify://shop_images/1_DESKTOP.jpg",
+            "image_mobile": "shopify://shop_images/1_MOBILE.jpg",
             "heading": "",
             "heading_size": "h2",
             "subheading": "",
             "button_label": "",
-            "link": "shopify:\/\/collections\/new-in",
+            "link": "shopify://collections/new-in",
             "button_style_secondary": false,
             "box_align": "bottom-left",
             "show_text_box": false,
@@ -52,11 +33,7 @@
         }
       },
       "block_order": [
-        "slide_XETjTq",
         "6565bc0f-3939-488b-909e-7616f7e59da3"
-      ],
-      "custom_css": [
-
       ],
       "settings": {
         "layout": "full_bleed",
@@ -84,51 +61,51 @@
         "column_hMYX63": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1.jpg",
+            "image": "shopify://shop_images/1.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/new-in"
+            "link": "shopify://collections/new-in"
           }
         },
         "column_DfNhbm": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.jpg",
+            "image": "shopify://shop_images/2.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/products\/gabriela-bandolera-negro-pequena"
+            "link": "shopify://products/gabriela-bandolera-negro-pequena"
           }
         },
         "column_jEbzwx": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3.jpg",
+            "image": "shopify://shop_images/3.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/products\/ofelia-mochila-beige-oscuro-mediana"
+            "link": "shopify://products/ofelia-mochila-beige-oscuro-mediana"
           }
         },
         "column_BnyQ8a": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4.jpg",
+            "image": "shopify://shop_images/4.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/products\/nahia-mochila-negro-especial-mediana"
+            "link": "shopify://products/nahia-mochila-negro-especial-mediana"
           }
         },
         "column_UBPWFc": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/5.jpg",
+            "image": "shopify://shop_images/5.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/products\/elaia-bandolera-camel-pequena"
+            "link": "shopify://products/elaia-bandolera-camel-pequena"
           }
         }
       },
@@ -173,13 +150,13 @@
         "slide_47hKm4": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_DESKTOP.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/2_MOBILE.jpg",
+            "image": "shopify://shop_images/2_DESKTOP.jpg",
+            "image_mobile": "shopify://shop_images/2_MOBILE.jpg",
             "heading": "",
             "heading_size": "h2",
             "subheading": "",
             "button_label": "",
-            "link": "shopify:\/\/collections\/bandoleras",
+            "link": "shopify://collections/bandoleras",
             "button_style_secondary": false,
             "box_align": "bottom-left",
             "show_text_box": false,
@@ -219,13 +196,13 @@
         "slide_3MMfDP": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_DESKTOP.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/3_MOBILE.jpg",
+            "image": "shopify://shop_images/3_DESKTOP.jpg",
+            "image_mobile": "shopify://shop_images/3_MOBILE.jpg",
             "heading": "",
             "heading_size": "h2",
             "subheading": "",
             "button_label": "",
-            "link": "shopify:\/\/collections\/dos-asas",
+            "link": "shopify://collections/dos-asas",
             "button_style_secondary": false,
             "box_align": "bottom-left",
             "show_text_box": false,
@@ -265,13 +242,13 @@
         "slide_aiTdk6": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_DESKTOP.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/4_MOBILE.jpg",
+            "image": "shopify://shop_images/4_DESKTOP.jpg",
+            "image_mobile": "shopify://shop_images/4_MOBILE.jpg",
             "heading": "",
             "heading_size": "h2",
             "subheading": "",
             "button_label": "",
-            "link": "shopify:\/\/collections\/mochilas",
+            "link": "shopify://collections/mochilas",
             "button_style_secondary": false,
             "box_align": "bottom-left",
             "show_text_box": false,
@@ -311,17 +288,17 @@
         "template--16161306640578__406a65c7-d10a-4160-a30c-634059fa1435-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Gancho_comercial_2.png",
+            "image": "shopify://shop_images/Gancho_comercial_2.png",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/pages\/politicas-de-cambio-y-devolucion"
+            "link": "shopify://pages/politicas-de-cambio-y-devolucion"
           }
         },
         "column_7G33BN": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Gancho_comercial_3.png",
+            "image": "shopify://shop_images/Gancho_comercial_3.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -331,11 +308,11 @@
         "5d62f929-a455-4369-b59a-d72d1f33b2a1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gancho_comercial_1.png",
+            "image": "shopify://shop_images/gancho_comercial_1.png",
             "title": "",
-            "text": "<p><\/p><p><\/p>",
+            "text": "<p></p><p></p>",
             "link_label": "",
-            "link": "shopify:\/\/pages\/envios-ziol"
+            "link": "shopify://pages/envios-ziol"
           }
         }
       },
@@ -347,7 +324,7 @@
       "custom_css": [
         ".multicolumn {background: #000;}",
         ".multicolumn-card-spacing {width: 100%; height: auto;}",
-        ".slider-button {color: rgb(172 172 172 \/ 75%);}",
+        ".slider-button {color: rgb(172 172 172 / 75%);}",
         ".slider-button:not([disabled]):hover {color: rgb(197 197 197);}"
       ],
       "settings": {
@@ -376,7 +353,7 @@
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": true,
-        "custm_video_url": "https:\/\/www.youtube.com\/embed\/rqqa37AjIoI?autoplay=1&controls=0&showinfo=0&loop=1&mute=1&playlist=rqqa37AjIoI&enablejsapi=1&origin=https%3A%2F%2Fwww.ziolstore.com&widgetid=1",
+        "custm_video_url": "https://www.youtube.com/embed/rqqa37AjIoI?autoplay=1&controls=0&showinfo=0&loop=1&mute=1&playlist=rqqa37AjIoI&enablejsapi=1&origin=https%3A%2F%2Fwww.ziolstore.com&widgetid=1",
         "video_url": "",
         "description": "",
         "full_width": true,
@@ -389,7 +366,7 @@
       "type": "apps",
       "blocks": {
         "retail_rocket_personalization_markups_9d6n4Y": {
-          "type": "shopify:\/\/apps\/retail-rocket-personalization\/blocks\/markups\/eb06115a-3169-4b5b-a921-16aac205bb7d",
+          "type": "shopify://apps/retail-rocket-personalization/blocks/markups/eb06115a-3169-4b5b-a921-16aac205bb7d",
           "settings": {
             "rrMarkupCode": "659548da9b15095e98a658f2",
             "rrEmptyMarkupCode": ""
@@ -407,7 +384,7 @@
       "type": "apps",
       "blocks": {
         "retail_rocket_personalization_markups_E9pptQ": {
-          "type": "shopify:\/\/apps\/retail-rocket-personalization\/blocks\/markups\/eb06115a-3169-4b5b-a921-16aac205bb7d",
+          "type": "shopify://apps/retail-rocket-personalization/blocks/markups/eb06115a-3169-4b5b-a921-16aac205bb7d",
           "settings": {
             "rrMarkupCode": "659550249b15095e98a65945",
             "rrEmptyMarkupCode": ""
@@ -425,7 +402,7 @@
       "type": "apps",
       "blocks": {
         "retail_rocket_personalization_markups_V9T4EP": {
-          "type": "shopify:\/\/apps\/retail-rocket-personalization\/blocks\/markups\/eb06115a-3169-4b5b-a921-16aac205bb7d",
+          "type": "shopify://apps/retail-rocket-personalization/blocks/markups/eb06115a-3169-4b5b-a921-16aac205bb7d",
           "settings": {
             "rrMarkupCode": "659550384d342b6d85f8bbcb",
             "rrEmptyMarkupCode": ""
@@ -443,7 +420,7 @@
       "type": "apps",
       "blocks": {
         "instafeed_app_block_7aYKkQ": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "title": "",
             "title_color": "",
