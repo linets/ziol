@@ -1,0 +1,40 @@
+#hero-banner {
+    width: 100%;
+    margin: var(--margin);
+}
+
+#hero-banner .container {
+    width: 100%;
+}
+
+#hero-banner .container a {
+    text-decoration: none;
+}
+
+#hero-banner .container a img {
+    width: 100%;
+    min-height: auto;
+    object-fit: cover;
+}
+
+#hero-banner .container a .img-mobile {
+    display: block;
+}
+
+#hero-banner .container a .img-desktop {
+    display: none;
+}
+
+@media (min-width:767px) {
+    #hero-banner {
+        margin: var(--margin-desktop);
+    }
+
+    #hero-banner .container a .img-mobile {
+        display: none;
+    }
+
+    #hero-banner .container a .img-desktop {
+        display: block;
+    }
+}

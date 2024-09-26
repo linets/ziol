@@ -1,0 +1,279 @@
+{{ 'list-of-collections-with-image.css' | asset_url | stylesheet_tag }}
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign config = section.settings
+  assign margin_top = config.marginTop | append: 'px'
+  assign margin_bottom = config.marginBottom | append: 'px'
+  assign padding_top = config.paddingTop | append: 'px'
+  assign padding_bottom = config.paddingBottom | append: 'px'
+  assign section_padding = padding_top | append: ' 0px ' | append: padding_bottom | append: ' 0px'
+  assign section_margin = margin_top | append: ' 0 ' | append: margin_bottom | append: ' 0'
+
+  assign margin_top_desktop = config.marginTopDesktop | append: 'px'
+  assign margin_bottom_desktop = config.marginBottomDesktop | append: 'px'
+  assign padding_top_desktop = config.paddingTopDesktop | append: 'px'
+  assign padding_bottom_desktop = config.paddingBottomDesktop | append: 'px'
+  assign section_padding_desktop = padding_top_desktop | append: ' 0px ' | append: padding_bottom_desktop | append: ' 0px'
+  assign section_margin_desktop = margin_top_desktop | append: ' 0 ' | append: margin_bottom_desktop | append: ' 0'
+-%}
+<div
+  id="collections-image"
+  style="--background: {{ config.section_background }}; --padding:{{ section_padding }}; --margin: {{ section_margin }}; --padding-desktop:{{ section_padding_desktop }}; --margin-desktop: {{ section_margin_desktop }};"
+>
+  <div class="container" style="--max-width: {{ config.max_width_container }}px;">
+    <div class="row">
+      {%- for block in section.blocks -%}
+        <div class="content {% if block.settings.image_first %} image_first {% endif %}">
+          {% if block.settings.picture != blank or block.settings.picture_desktop %}
+            <a href="{{ block.settings.featured_col.url }}" class="item container-img" {{ block.shopify_attributes }}>
+              <img
+                src="{{ block.settings.picture | image_url }}"
+                class="img-mobile"
+                width=""
+                height=""
+                alt="{{ block.settings.picture.alt }}"
+              >
+              <img
+                src="{{ block.settings.picture_desktop | image_url }}"
+                class="img-desktop"
+                width=""
+                height=""
+                alt="{{ block.settings.picture.alt }}"
+              >
+            </a>
+          {% endif %}
+          <div class="item item-collection swiper mySwiper">
+            <div class="swiper-wrapper">
+              {%- if block.settings.featured_col != blank -%}
+                {%- assign collection = collections[block.settings.featured_col] -%}
+                {% assign limit_pro = block.settings.limit_of_pro %}
+                {% for product in collection.products limit: limit_pro %}
+                  <div class="product-item swiper-slide">
+                    {% render 'card-product',
+                      card_product: product,
+                      show_rating: section.settings.show_rating,
+                      show_vendor: section.settings.show_vendor,
+                      lazy_load: section.settings.lazy_load,
+                      extend_height: section.settings.extend_height,
+                      lazy_load: section.settings.lazy_load,
+                      show_secondary_image: section.settings.show_secondary_image,
+                      horizontal_class: section.settings.horizontal_class,
+                      horizontal_quick_add: section.settings.horizontal_quick_add
+                    %}
+                  </div>
+                {% endfor %}
+              {%- endif -%}
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+<script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
+<script src="{{ 'list-of-collections-with-image.js' | asset_url }}" defer></script>
+{% schema %}
+{
+  "name": "List Collections Image",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Customize Section"
+    },
+    {
+      "type": "color",
+      "id": "section_background",
+      "label": "Section Background",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "customize Container"
+    },
+    {
+      "type": "number",
+      "id": "max_width_container",
+      "label": "Max Width",
+      "default": 1920,
+      "info": "Unit px"
+    },
+    {
+      "type": "header",
+      "content": "Section space mobile"
+    },
+    {
+      "type": "number",
+      "id": "paddingTop",
+      "label": "Padding top",
+      "default": 0,
+      "info": "Unit px"
+    },
+    {
+      "type": "number",
+      "id": "paddingBottom",
+      "label": "Padding bottom",
+      "default": 0,
+      "info": "Unit px"
+    },
+    {
+      "type": "number",
+      "id": "marginTop",
+      "label": "Margin top",
+      "default": 0,
+      "info": "Unit px"
+    },
+    {
+      "type": "number",
+      "id": "marginBottom",
+      "label": "Margin bottom",
+      "default": 0,
+      "info": "Unit px"
+    },
+    {
+      "type": "header",
+      "content": "Section space desktop"
+    },
+    {
+      "type": "number",
+      "id": "paddingTopDesktop",
+      "label": "Padding top",
+      "default": 0,
+      "info": "Unit px"
+    },
+    {
+      "type": "number",
+      "id": "paddingBottomDesktop",
+      "label": "Padding bottom",
+      "default": 0,
+      "info": "Unit px"
+    },
+    {
+      "type": "number",
+      "id": "marginTopDesktop",
+      "label": "Margin top",
+      "default": 0,
+      "info": "Unit px"
+    },
+    {
+      "type": "number",
+      "id": "marginBottomDesktop",
+      "label": "Margin bottom",
+      "default": 0,
+      "info": "Unit px"
+    },
+    {
+      "type": "header",
+      "content": "Card Product"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "label": "Show vendor",
+      "default": true,
+      "info": "Show the product vendor"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_secondary_image",
+      "label": "Show Secondary Image",
+      "default": true,
+      "info": "Show the secondary image on hover"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rating",
+      "label": "Show Rating",
+      "default": true,
+      "info": "Show the product rating"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_quick_add",
+      "label": "Show Quick Add",
+      "default": true,
+      "info": "Show the quick add button"
+    },
+    {
+      "type": "checkbox",
+      "id": "horizontal_class",
+      "label": "Horizontal Class",
+      "default": true,
+      "info": "Add a card--horizontal class if set to true"
+    },
+    {
+      "type": "checkbox",
+      "id": "horizontal_quick_add",
+      "label": "Horizontal Quick Add",
+      "default": true,
+      "info": "Changes the quick add button styles when set to true"
+    },
+    {
+      "type": "checkbox",
+      "id": "lazy_load",
+      "label": "Lazy Load",
+      "default": true,
+      "info": "Image should be lazy loaded"
+    },
+    {
+      "type": "checkbox",
+      "id": "extend_height",
+      "label": "Extend Height",
+      "default": true,
+      "info": " Card height extends to available container space"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Collection",
+      "type": "collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "featured_col",
+          "label": "Choose a collection"
+        },
+        {
+          "type": "range",
+          "id": "limit_of_pro",
+          "min": 4,
+          "max": 20,
+          "step": 1,
+          "label": "Products Shown",
+          "default": 16
+        },
+        {
+          "type": "checkbox",
+          "id": "image_first",
+          "label": "Collection First",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "Mobile"
+        },
+        {
+          "type": "image_picker",
+          "id": "picture",
+          "label": "Choose a picture"
+        },
+        {
+          "type": "header",
+          "content": "Desktop"
+        },
+        {
+          "type": "image_picker",
+          "id": "picture_desktop",
+          "label": "Choose a picture"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "List Collections Image"
+    }
+  ]
+}
+{% endschema %}

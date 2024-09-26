@@ -1,0 +1,94 @@
+{%- liquid
+  assign config = section.settings
+  assign margin_top = config.marginTop | append: 'px'
+  assign margin_bottom = config.marginBottom | append: 'px'
+  assign section_margin = margin_top | append: ' 0 ' | append: margin_bottom | append: ' 0'
+
+  assign margin_top_desktop = config.marginTopDesktop | append: 'px'
+  assign margin_bottom_desktop = config.marginBottomDesktop | append: 'px'
+  assign section_margin_desktop = margin_top_desktop | append: ' 0 ' | append: margin_bottom_desktop | append: ' 0'
+-%}
+{{ 'hero-banner.css' | asset_url | stylesheet_tag }}
+<div id="hero-banner" style="--margin: {{ section_margin }}; --margin-desktop: {{ section_margin_desktop }};">
+  <div class="container">
+    <a href="{{ config.url }}">
+      <img
+        src="{{ config.image_mobile | image_url }}"
+        alt="{{ config.image_mobile.alt }}"
+        class="img-mobile"
+        width=""
+        height=""
+      >
+      <img
+        src="{{ config.image_desktop | image_url }}"
+        alt="{{ config.image_desktop.alt }}"
+        class="img-desktop"
+        width=""
+        height=""
+      >
+    </a>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Hero Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image Mobile"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_desktop",
+      "label": "Image Desktop"
+    },
+    {
+      "type": "url",
+      "id": "link_image",
+      "label": "Link Image"
+    },
+    {
+      "type": "header",
+      "content": "Section space mobile"
+    },
+    {
+      "type": "number",
+      "id": "marginTop",
+      "label": "Margin top",
+      "default": 0,
+      "info": "Unit px"
+    },
+    {
+      "type": "number",
+      "id": "marginBottom",
+      "label": "Margin bottom",
+      "default": 0,
+      "info": "Unit px"
+    },
+    {
+      "type": "header",
+      "content": "Section space desktop"
+    },
+    {
+      "type": "number",
+      "id": "marginTopDesktop",
+      "label": "Margin top",
+      "default": 0,
+      "info": "Unit px"
+    },
+    {
+      "type": "number",
+      "id": "marginBottomDesktop",
+      "label": "Margin bottom",
+      "default": 0,
+      "info": "Unit px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Banner"
+    }
+  ]
+}
+{% endschema %}
