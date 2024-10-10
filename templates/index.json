@@ -288,9 +288,9 @@
         "template--16161306640578__406a65c7-d10a-4160-a30c-634059fa1435-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Envio_gratis.png",
-            "title": "",
-            "text": "",
+            "image": "shopify://shop_images/enviov2.png",
+            "title": "<strong>Envío gratis</strong>",
+            "text": "<p>Por compras superiores a $29.900</p>",
             "link_label": "",
             "link": "shopify://pages/envios-ziol"
           }
@@ -298,9 +298,9 @@
         "column_7G33BN": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/cuotas.png",
-            "title": "",
-            "text": "",
+            "image": "shopify://shop_images/cuotasv2.png",
+            "title": "<strong>Hasta 6 cuotas</strong>",
+            "text": "<p>Sin interés</p>",
             "link_label": "",
             "link": ""
           }
@@ -308,9 +308,9 @@
         "5d62f929-a455-4369-b59a-d72d1f33b2a1": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/cambios.png",
-            "title": "",
-            "text": "<p></p><p></p>",
+            "image": "shopify://shop_images/cambiov2.png",
+            "title": "<strong>Cambios y devoluciones</strong>",
+            "text": "<p>Sin costo</p><p></p>",
             "link_label": "",
             "link": "shopify://pages/politicas-de-cambio-y-devolucion"
           }
@@ -322,17 +322,16 @@
         "5d62f929-a455-4369-b59a-d72d1f33b2a1"
       ],
       "custom_css": [
-        ".multicolumn {background: #F9F9F9;}",
-        ".multicolumn-card-spacing {width: 100%; height: auto;}",
-        ".slider-button {color: rgb(172 172 172 / 75%);}",
-        ".slider-button:not([disabled]):hover {color: rgb(197 197 197);}"
+        ".multicolumn {background: #f9f9f9;}",
+        ".media > *:not(.zoom):not(.deferred-media__poster-button) {width: 50px; height: 45px; margin: 55px 25px;}",
+        ".multicolumn-card-spacing {width: 100px; height: 100px;}"
       ],
       "settings": {
-        "force_full_width": true,
+        "force_full_width": false,
         "title": "",
         "heading_size": "h2",
-        "image_width": "full",
-        "image_ratio": "adapt",
+        "image_width": "half",
+        "image_ratio": "square",
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
@@ -342,8 +341,8 @@
         "columns_mobile": "1",
         "swipe_on_desktop": false,
         "swipe_on_mobile": true,
-        "padding_top": 16,
-        "padding_bottom": 16
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "dc802415-49b3-4130-a1bb-b4143927a0d4": {
